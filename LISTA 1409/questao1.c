@@ -7,4 +7,5 @@ void soma_vetor() {
         soma += vetor[i];
     }
     printf("Soma dos elementos: %d\n", soma);
+    
 }
