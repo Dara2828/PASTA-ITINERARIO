@@ -1,0 +1,10 @@
+#include <stdio.h>
+void soma_vetor() {
+    int vetor[10], soma = 0;
+    for(int i=0; i<10; i++) {
+        printf("Digite o %dº numero: ", i+1);
+        scanf("%d", &vetor[i]);
+        soma += vetor[i];
+    }
+    printf("Soma dos elementos: %d\n", soma);
+}
