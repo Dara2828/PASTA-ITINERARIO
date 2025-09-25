@@ -15,4 +15,5 @@ int main() {
     scanf("%d", &numero);
     printf("O numero %d aparece %d vezes.\n", numero, contar(matriz, numero));
     return 0;
+    
 }
