@@ -1,0 +1,30 @@
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Códigos de destino:");
+        Console.WriteLine("1 - Morros (R$120,00)");
+        Console.WriteLine("2 - Barreirinhas (R$200,00)");
+        Console.WriteLine("3 - Bacabeira (R$50,00)");
+        Console.WriteLine("4 - Rosário (R$80,00)");
+
+        Console.Write("Digite o código do destino: ");
+        int codigo = int.Parse(Console.ReadLine());
+
+        Console.Write("A viagem é ida e volta? (s/n): ");
+        char resposta = char.Parse(Console.ReadLine().ToLower());
+
+        double valor = 0;
+        if (codigo == 1) valor = 120;
+        else if (codigo == 2) valor = 200;
+        else if (codigo == 3) valor = 50;
+        else if (codigo == 4) valor = 80;
+
+        if (resposta == 's') {
+            valor *= 2;
+            valor *= 0.9; // desconto de 10%
+        }
+
+        Console.WriteLine($"Valor total da passagem: R$ {valor:F2}");
+    }
+}
